@@ -35,6 +35,25 @@ df["Average_Score"] = (
 print("\nSTUDENT AVERAGE SCORES")
 print(df[["Student", "Average_Score"]])
 
+
+# Step 5: Categorize student performance
+def categorize_performance(score):
+    if score >= 85:
+        return "Excellent"
+    elif score >= 70:
+        return "Good"
+    else:
+        return "Needs Improvement"
+
+
+df["Performance_Category"] = df["Average_Score"].apply(
+    categorize_performance
+)
+
+print("\nSTUDENT PERFORMANCE CATEGORIES")
+print(df[["Student", "Average_Score", "Performance_Category"]])
+
+
 # Step 5: Find the highest-performing student
 top_student = df.loc[df["Average_Score"].idxmax()]
 
