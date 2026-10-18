@@ -85,3 +85,34 @@ The analysis script has run successfully, the data quality checks have passed fo
 ## Learning Outcomes
 
 This project provided practice with CSV data loading, Pandas calculations, data quality validation, Matplotlib visualization, and Git/GitHub version control.
+
+## Run the Interactive Dashboard
+
+### 1. Install the required libraries
+
+```bash
+python -m pip install pandas matplotlib streamlit
+```
+
+### 2. Start the dashboard
+
+```bash
+python -m streamlit run dashboard.py
+```
+
+### 3. Open the dashboard
+
+Streamlit will display a local URL in the terminal, usually:
+
+http://localhost:8501
+
+Open that URL in your browser.
+
+## Dashboard Features
+
+- Student performance summary metrics
+- Data quality checks
+- Mathematics and Science comparison chart
+- Performance category distribution
+- Filterable student records
+- Downloadable CSV analysis report
